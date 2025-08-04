@@ -1,8 +1,8 @@
-# [chanhdai.com](https://chanhdai.com)
+# [habeel.live](https://habeel.live)
 
 A minimal portfolio, component registry, and blog to showcase my work as a Design Engineer.
 
-Check out the live site: [chanhdai.com](https://chanhdai.com)
+Check out the live site: [habeel.live](https://habeel.live)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.webp">
@@ -35,27 +35,6 @@ Check out the live site: [chanhdai.com](https://chanhdai.com)
 - Syntax Highlighting for better readability
 - RSS Feed for easy content distribution
 - Dynamic OG Images for rich previews
-
-### Component Registry
-
-Easily build and distribute your own components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
-
-Each component is well-documented through the Blog, featuring:
-
-- **Live Preview**: Interactive component demos
-- **Code Snippets**: Readable and copyable examples
-- **Beautiful Code Blocks**: Styled for clarity and dark mode
-- **Command Blocks**: One-click copy for quick install commands (`pnpm`, `npm`, `yarn`, `bun`)
-
-## Development
-
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
-
-## License
-
-Licensed under the [MIT license](./LICENSE).
-
-> You're free to use my code! Just make sure to remove all my personal information before publishing your website. It's awesome to see my code being useful to someone!
 
 ## Star History
 

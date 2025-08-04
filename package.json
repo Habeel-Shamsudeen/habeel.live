@@ -1,15 +1,20 @@
 {
-  "name": "chanhdai.com",
+  "name": "habeel.live",
   "version": "0.1.0",
-  "description": "A minimal portfolio, component registry, and blog.",
-  "homepage": "https://chanhdai.com",
+  "description": "A minimal portfolio, and blog.",
+  "homepage": "https://habeel.live",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Habeel Shamsudeen",
+    "email": "habeel8075@gmail.com",
+    "url": "https://github.com/habeel-shamsudeen"
   },
   "contributors": [
+    {
+      "name": "Habeel Shamsudeen",
+      "email": "habeel8075@gmail.com",
+      "url": "https://github.com/habeel-shamsudeen"
+    },
     {
       "name": "Nguyen Chanh Dai",
       "email": "dai@chanhdai.com",
@@ -18,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/habeel-shamsudeen/habeel.live.git"
   },
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",

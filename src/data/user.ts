@@ -8,8 +8,8 @@ export const USER = {
   bio: "Creating with code. Small details matter.",
   flipSentences: [
     "Creating with code. Small details matter.",
-    "Design Engineer",
-    "Open Source Contributor",
+    "Building GradeIt",
+    "Software Developer",
   ],
   address: "Kerala, India",
   phoneNumber: "KzkxODA3NTgxNDc0Ng", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
@@ -34,20 +34,20 @@ export const USER = {
     },
   ],
   about: `
-Hello, World! I am Habeel — a Software Engineer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.
+Hi, I’m Habeel — a Software Engineer passionate about building reliable, high-performance web applications with a focus on clean architecture and seamless user experiences.
 
-With 1+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.
+With over a year of experience, I’ve contributed to startups like Oddsview (YC W24), where I worked on building scalable Python-based web scrapers and optimized infrastructure using AWS CDK. I also interned as a full-stack developer at YouseAI, gaining hands-on experience in modern frontend and backend technologies.
 
-One of my key projects, [ZaDark](https://zadark.com), enhances the Zalo experience on PC and Web, surpassing 80,000 downloads on [SourceForge](https://sourceforge.net/projects/zadark) and 15,000 active users on the [Chrome Web Store](https://chromewebstore.google.com/detail/llfhpkkeljlgnjgkholeppfnepmjppob) since 2022.
+Currently, I’m building GradeIT, an online platform designed to simplify the evaluation of coding assignments through automated test case generation, constraint checking, and plagiarism detection — all powered by modern full-stack development practices.
 
-I'm also the creator of [React Wheel Picker](https://react-wheel-picker.chanhdai.com) — iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. It has earned 221 stars on [GitHub](https://github.com/ncdai/react-wheel-picker) and was selected for **Vercel's Open Source Program** summer 2025 cohort, receiving $3,600 in Vercel platform credits, an OSS Starter Pack, and priority community support to fuel its ongoing development.
+My tech stack includes Next.js, React, TypeScript, Node.js, and I’m actively exploring areas like DevOps and advanced backend communication. Outside of development, I enjoy learning new skills, exploring ideas through side projects, and collaborating with other developers to bring innovative solutions to life.
 
 Let's connect and collaborate!
   `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.jpeg",
+  avatar: "https://assets.chanhdai.com/images/",
   ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
   namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
   keywords:
-    "ncdai, nguyenchanhdai, nguyen chanh dai, chanhdai, chanh dai, iamncdai, quaric, zadark, nguyễn chánh đại, chánh đại",
-  dateCreated: "2023-10-20", // YYYY-MM-DD
+    "habeel, habeel shamsudeen, habeel shams, software developer, web developer, react developer, nextjs developer, typescript developer, frontend developer, fullstack developer, oddsview, gradeit, kerala developer, india developer, vserv, taskflow",
+  dateCreated: "2025-08-04", // YYYY-MM-DD
 };

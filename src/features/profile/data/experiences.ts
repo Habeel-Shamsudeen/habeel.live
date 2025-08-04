@@ -2,105 +2,67 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "simplamo",
-    companyName: "Simplamo Enterprise JSC",
-    companyLogo: "https://assets.chanhdai.com/images/companies/simplamo.webp",
+    id: "oddsview",
+    companyName: "Oddsview (YC W24)",
     positions: [
       {
-        id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
-        title: "Senior Frontend Developer",
+        id: "oddsview-dev-2025",
+        title: "Software Engineer",
         employmentPeriod: {
-          start: "10.2022",
+          start: "07.2025",
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Develop [AI Chat](https://help.simplamo.com/features/simplamo-ai/ai-chat/guide_simplamo_ai_chat?ref=IN-926722) and [AI Assistant](https://help.simplamo.com/features/simplamo-ai/ai-expert/aiexpert-rockdiscribe?ref=IN-926722) features.
-- Develop [Whiteboards](https://help.simplamo.com/features/whiteboard/overview?ref=IN-926722) with real-time collaboration.
-- Build and maintain the [Zalo Mini App](https://zalo.me/s/1736112917405511258/) for Simplamo with seamless integration.
-- Develop interactive chart and analytics widgets for the [Dashboard](https://help.simplamo.com/features/dashboard/overview) to enhance data visualization.
-- Develop and maintain core features to enhance functionality and user experience.
-- Ensure UI/UX consistency and adherence to standards.
-- Implement robust frontend solutions for web and mobile platforms.
-- Analyze technical capabilities and provide optimal solutions.`,
+        description: `- Developed Python-based web scrapers to collect and analyze real-time betting data.
+- Optimized infrastructure and deployment workflows using AWS CDK for scalable and maintainable environments.
+- Collaborated with backend and DevOps teams to ensure efficient and cost-effective cloud deployments.`,
         skills: [
+          "Python",
           "TypeScript",
-          "Next.js",
-          "React Native",
-          "MobX",
-          "MobX-State-Tree",
-          "Tailwind CSS",
-          "Dify",
-          "Zalo Mini App",
-          "Agile",
-          "Teamwork",
-          "Research",
-          "Problem-solving",
+          "Web Scraping",
+          "AWS CDK",
+          "AWS ECS",
+          "AWS ECR",
+          "Shell Scripting",
+          "Infrastructure as Code",
+          "Deployment Optimization",
         ],
         isExpanded: true,
-      },
-      {
-        id: "cedd7adb-4118-4085-9983-ae00530b49e2",
-        title: "UI Design Lead",
-        employmentPeriod: {
-          start: "10.2022",
-        },
-        employmentType: "Full-time",
-        icon: "design",
-        description: `- Ensure UI/UX consistency and high-quality standards.
-- Design intuitive, user-focused interfaces aligned with business goals.
-- Define and establish a cohesive UI style for Simplamo.`,
-        skills: ["Creativity", "UI/UX Design", "Figma"],
       },
     ],
     isCurrentEmployer: true,
   },
   {
-    id: "freelance",
-    companyName: "Freelance",
+    id: "youseai",
+    companyName: "YouseAI",
     positions: [
       {
-        id: "f0becfba-057d-40db-b252-739e1654faa1",
-        title: "Full-stack Developer",
+        id: "youseai-intern-2024",
+        title: "Full Stack Developer Intern",
         employmentPeriod: {
-          start: "2018",
-          end: "2020",
+          start: "10.2024",
+          end: "01.2025",
         },
-        employmentType: "Part-time",
-        description: `- Built an order management website with real-time delivery tracking.
-- Developed an e-commerce site for bird's nest products.
-- Created a map to display monitoring station data.
-- Designed a customizable WordPress landing page.`,
+        employmentType: "Internship",
         icon: "code",
+        description: `- Increased user engagement by 40% by building a passwordless OTP login and streamlining the onboarding flow for an AI SaaS platform.
+- Reduced avatar creation time by 60% with Azure Storage–based preset model logic.
+- Integrated application-wide analytics using PostHog and resolved 15+ critical frontend bugs to improve performance and reliability.
+- Architected the frontend for a LinkedIn automation tool using React, improving load times by 40% and engagement metrics by 25%.`,
         skills: [
-          "Laravel",
+          "Next.js",
           "React",
+          "TypeScript",
+          "Node.js",
           "Express.js",
-          "Socket.IO",
           "MongoDB",
-          "Firebase",
-          "WordPress",
-          "Docker",
-          "NGINX",
+          "Prisma",
+          "Azure Storage",
+          "PostHog",
+          "Frontend Architecture",
+          "UI Optimization",
         ],
-      },
-      {
-        id: "0eecdfcb-028d-41f4-93e9-1269ba7eff7e",
-        title: "Graphic & UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Part-time",
-        description: "Designed logos, posters, ads, and UI.",
-        icon: "design",
-        skills: [
-          "Creativity",
-          "UI/UX Design",
-          "Graphic Design",
-          "Sketch",
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-        ],
+        isExpanded: true,
       },
     ],
   },

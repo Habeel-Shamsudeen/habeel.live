@@ -8,7 +8,6 @@ import remarkGfm from "remark-gfm";
 import { visit } from "unist-util-visit";
 
 import { CodeCollapsibleWrapper } from "@/components/code-collapsible-wrapper";
-import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 import {
   Table,
@@ -22,7 +21,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Code, Heading } from "@/components/ui/typography";
 import { UTM_PARAMS } from "@/config/site";
 import { rehypeAddQueryParams } from "@/lib/rehype-add-query-params";
-import { rehypeComponent } from "@/lib/rehype-component";
 import { rehypeNpmCommand } from "@/lib/rehype-npm-command";
 import { remarkCodeImport } from "@/lib/remark-code-import";
 import { cn } from "@/lib/utils";
@@ -111,7 +109,6 @@ const components: MDXRemoteProps["components"] = {
     );
   },
   code: Code,
-  ComponentPreview,
   ComponentSource,
   CodeCollapsibleWrapper,
   CodeTabs,
@@ -145,7 +142,6 @@ const options: MDXRemoteProps["options"] = {
         { target: "_blank", rel: "nofollow noopener noreferrer" },
       ],
       rehypeSlug,
-      rehypeComponent,
       () => (tree) => {
         visit(tree, (node) => {
           if (node?.type === "element" && node?.tagName === "pre") {
