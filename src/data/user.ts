@@ -44,7 +44,7 @@ My tech stack includes Next.js, React, TypeScript, Node.js, and I’m actively e
 
 Let's connect and collaborate!
   `,
-  avatar: "https://assets.chanhdai.com/images/",
+  avatar: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
   ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
   namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
   keywords:
