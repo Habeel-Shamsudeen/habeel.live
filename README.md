@@ -26,19 +26,6 @@ Check out the live site: [habeel.live](https://habeel.live)
 - SEO optimization: [JSON-LD schema](https://json-ld.org), sitemap, robots
 - AI-friendly [/llms.txt](https://llmstxt.org)
 - Spam-protected email
-- Installable PWA
-
-### Blog
-
-- MDX & Markdown support
-- Access markdown by adding `.md` to URLs, e.g. `/blog/welcome.md`
-- Syntax Highlighting for better readability
-- RSS Feed for easy content distribution
-- Dynamic OG Images for rich previews
-
-## Star History
-
-[![Star History](https://starchart.cc/ncdai/chanhdai.com.svg?variant=adaptive)](https://starchart.cc/ncdai/chanhdai.com)
 
 ## Acknowledgments
 
@@ -51,4 +38,5 @@ Check out the live site: [habeel.live](https://habeel.live)
 - [Aceternity UI](https://ui.aceternity.com)
 - [Lucide](https://lucide.dev)
 - [Fumadocs](https://fumadocs.dev)
+- [ncdai](https://x.com/iamncdai) 
 - And many other open-source libraries used in `package.json`

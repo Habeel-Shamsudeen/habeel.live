@@ -62,20 +62,7 @@ export function SiteFooter() {
               <span className="sr-only">RSS</span>
             </a>
 
-            <Separator />
-
-            <a
-              className="flex text-muted-foreground transition-colors hover:text-foreground"
-              href={
-                process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icons.dmca className="h-5 w-auto" />
-              <span className="sr-only">DMCA.com Protection Status</span>
-            </a>
+            
           </div>
         </div>
       </div>
