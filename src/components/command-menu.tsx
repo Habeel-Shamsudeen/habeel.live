@@ -62,11 +62,6 @@ const MENU_LINKS: CommandLinkItem[] = [
     href: "/blog",
     icon: RssIcon,
   },
-  {
-    title: "Components",
-    href: "/components",
-    icon: Icons.react,
-  },
 ];
 
 const DAIFOLIO_LINKS: CommandLinkItem[] = [
@@ -175,13 +170,10 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
     [setTheme]
   );
 
-  const { blogLinks, componentLinks } = useMemo(
+  const { blogLinks } = useMemo(
     () => ({
       blogLinks: posts
         .filter((post) => post.metadata?.category !== "components")
-        .map(postToCommandLinkItem),
-      componentLinks: posts
-        .filter((post) => post.metadata?.category === "components")
         .map(postToCommandLinkItem),
     }),
     [posts]
@@ -249,15 +241,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             heading="Blog"
             links={blogLinks}
             fallbackIcon={TextIcon}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandSeparator />
-
-          <CommandLinkGroup
-            heading="Components"
-            links={componentLinks}
-            fallbackIcon={Icons.react}
             onLinkSelect={handleOpenLink}
           />
 
@@ -473,11 +456,9 @@ function CommandMenuKbd({ className, ...props }: React.ComponentProps<"kbd">) {
 }
 
 function postToCommandLinkItem(post: Post): CommandLinkItem {
-  const isComponent = post.metadata?.category === "components";
-
   return {
     title: post.metadata.title,
-    href: isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`,
-    keywords: isComponent ? ["component"] : undefined,
+    href: `/blog/${post.slug}`,
+    keywords: undefined,
   };
 }
