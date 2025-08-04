@@ -5,9 +5,9 @@ A minimal portfolio, component registry, and blog to showcase my work as a Desig
 Check out the live site: [habeel.live](https://habeel.live)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-light.webp">
-  <img src="https://assets.chanhdai.com/images/screenshot-desktop-light.webp" alt="Screenshot">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-light-theme.png">
+  <img src="https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-light-theme.png" alt="Screenshot">
 </picture>
 
 ## Overview

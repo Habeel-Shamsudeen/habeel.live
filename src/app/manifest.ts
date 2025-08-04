@@ -51,13 +51,13 @@ export default function manifest(): MetadataRoute.Manifest {
         form_factor: "narrow",
       },
       {
-        src: "https://assets.chanhdai.com/images/screenshot-desktop-dark.webp",
+        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
         type: "image/webp",
         sizes: "1920x1080",
         form_factor: "wide",
       },
       {
-        src: "https://assets.chanhdai.com/images/screenshot-desktop-light.webp",
+        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-light-theme.png",
         type: "image/webp",
         sizes: "1920x1080",
         form_factor: "wide",
