@@ -16,13 +16,13 @@ export const META_THEME_COLORS = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Daifolio",
+    title: "Portfolio",
     href: "/",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
 ];
 
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/habeel-shamsudeen/habeel.live";

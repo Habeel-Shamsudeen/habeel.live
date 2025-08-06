@@ -1,58 +1,4 @@
-"use client";
-
-import { useMotionValueEvent, useScroll } from "motion/react";
-import * as motion from "motion/react-m";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-
-export function SiteHeaderMark() {
-  const pathname = usePathname();
-  return pathname === "/" ? <LogoMarkMotion /> : <LogoMark />;
-}
-
-function LogoMarkMotion() {
-  const { scrollY } = useScroll();
-  const [visible, setVisible] = useState(false);
-  const distanceRef = useRef(160);
-
-  useMotionValueEvent(scrollY, "change", (latestValue) => {
-    setVisible(latestValue >= distanceRef.current);
-  });
-
-  useEffect(() => {
-    const coverMark = document.getElementById("js-cover-mark");
-    if (!coverMark) return;
-
-    distanceRef.current = calcDistance(coverMark);
-
-    const resizeObserver = new ResizeObserver(() => {
-      distanceRef.current = calcDistance(coverMark);
-    });
-    resizeObserver.observe(coverMark);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, []);
-
-  return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        transform: "translateY(8px)",
-      }}
-      animate={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0px)" : "translateY(8px)",
-      }}
-      transition={{ duration: 0.3 }}
-    >
-      <LogoMark />
-    </motion.div>
-  );
-}
-
-function LogoMark() {
+export function LogoMark(props: React.ComponentProps<"svg">) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +7,7 @@ function LogoMark() {
       viewBox="0 0 150 75"
       version="1.2"
       className="text-foreground"
+      {...props}
     >
       <defs>
         <clipPath id="a">
@@ -191,9 +138,6 @@ function LogoMark() {
   );
 }
 
-const calcDistance = (el: HTMLElement) => {
-  const rect = el.getBoundingClientRect();
-  const scrollTop = document.documentElement.scrollTop;
-  const headerHeight = 56;
-  return scrollTop + rect.top + rect.height - headerHeight;
-};
+export function getMarkSVG(color: string) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 256 128"><path fill="${color}" d="M96 128H32V96h64v32ZM224 32h-64v64h64v32h-96V0h96v32ZM32 96H0V32h32v64ZM256 96h-32V32h32v64ZM96 32H32V0h64v32Z"/></svg>`;
+}
