@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@Habee1_", // Twitter username
+    creator: "@Habee1_",
     images: [SITE_INFO.ogImage],
   },
   icons: {
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
       },
     ],
     apple: {
-      url: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/apple-touch-icon.png",
+      url: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.png",
       type: "image/png",
       sizes: "180x180",
     },

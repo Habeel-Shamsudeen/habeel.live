@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { ChanhDaiMark } from "./chanhdai-mark";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export function SiteHeaderMark() {
   const pathname = usePathname();
@@ -13,6 +15,7 @@ export function SiteHeaderMark() {
 }
 
 function ChanhDaiMarkMotion() {
+  const { theme } = useTheme();
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(false);
   const distanceRef = useRef(160);
@@ -38,9 +41,7 @@ function ChanhDaiMarkMotion() {
   }, []);
 
   return (
-    <motion.svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 256"
+    <motion.div
       initial={{
         opacity: 0,
         transform: "translateY(8px)",
@@ -51,11 +52,13 @@ function ChanhDaiMarkMotion() {
       }}
       transition={{ duration: 0.3 }}
     >
-      <path
-        d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
-        fill="currentColor"
+      <Image
+        src={`https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/HB-logo-${theme}.svg`}
+        width={60}
+        height={60}
+        alt="Habeel"
       />
-    </motion.svg>
+    </motion.div>
   );
 }
 

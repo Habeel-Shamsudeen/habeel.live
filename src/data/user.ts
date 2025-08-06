@@ -45,8 +45,7 @@ My tech stack includes Next.js, React, TypeScript, Node.js, and I’m actively e
 Let's connect and collaborate!
   `,
   avatar: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
-  ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
+  ogImage: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
   keywords:
     "habeel, habeel shamsudeen, habeel shams, software developer, web developer, react developer, nextjs developer, typescript developer, frontend developer, fullstack developer, oddsview, gradeit, kerala developer, india developer, vserv, taskflow",
   dateCreated: "2025-08-04", // YYYY-MM-DD
