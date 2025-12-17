@@ -25,7 +25,10 @@ export const MAIN_NAV: NavItem[] = [
   // },
 ];
 
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/habeel-shamsudeen/habeel.live";
+export const GITHUB_USERNAME = "Habeel-Shamsudeen";
+
+export const SOURCE_CODE_GITHUB_URL =
+  "https://github.com/habeel-shamsudeen/habeel.live";
 
 export const UTM_PARAMS = {
   utm_source: "habeel.live",

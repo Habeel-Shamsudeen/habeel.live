@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import type { Metadata } from "next";
 
 import { PostItem } from "@/components/post-item";
@@ -33,8 +32,10 @@ export default function Page() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {allPosts
             .slice()
-            .sort((a, b) =>
-              dayjs(b.metadata.createdAt).diff(dayjs(a.metadata.createdAt))
+            .sort(
+              (a, b) =>
+                new Date(b.metadata.createdAt).getTime() -
+                new Date(a.metadata.createdAt).getTime()
             )
             .map((post, index) => (
               <PostItem

@@ -1,4 +1,4 @@
-import dayjs from "dayjs";
+import { format } from "date-fns";
 
 import { getAllPosts } from "@/data/blog";
 
@@ -35,7 +35,7 @@ ${post.metadata.description}
 
 ${post.content.trim()}
 
-Last updated on ${dayjs(post.metadata.updatedAt).format("MMMM D, YYYY")}
+Last updated on ${format(new Date(post.metadata.updatedAt), "dd.MM.yyyy")}
 `,
     {
       headers: {

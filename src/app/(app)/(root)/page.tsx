@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { USER } from "@/data/user";
@@ -14,6 +13,7 @@ import { Projects } from "@/features/profile/components/projects";
 import { SocialLinks } from "@/features/profile/components/social-links";
 import { TeckStack } from "@/features/profile/components/teck-stack";
 import { cn } from "@/lib/utils";
+// import { GitHubContributions } from "@/components/github-contributions/Index";
 
 export default function Page() {
   return (
@@ -39,6 +39,9 @@ export default function Page() {
         <About />
         <Separator />
 
+        {/* <GitHubContributions />
+        <Separator /> */}
+
         <TeckStack />
         <Separator />
 
@@ -50,8 +53,6 @@ export default function Page() {
 
         {/* <Blog />
         <Separator /> */}
-
-
 
         {/* <Awards />
         <Separator /> */}
@@ -69,8 +70,8 @@ function getPageJsonLd(): WithContext<PageSchema> {
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    dateCreated: dayjs(USER.dateCreated).toISOString(),
-    dateModified: dayjs().toISOString(),
+    dateCreated: new Date(USER.dateCreated).toISOString(),
+    dateModified: new Date().toISOString(),
     mainEntity: {
       "@type": "Person",
       name: USER.displayName,
