@@ -36,12 +36,16 @@ export const TECH_STACK: TechStack[] = [
     title: "Express",
     href: "https://expressjs.com/",
     categories: ["Framework"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/express.svg",
   },
   {
-    key: "authjs",
-    title: "Auth.js",
-    href: "https://authjs.dev/",
-    categories: ["Library", "Authentication"],
+    key: "fastapi",
+    title: "FastAPI",
+    href: "https://fastapi.tiangolo.com/",
+    categories: ["Framework"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/fastapi.svg",
   },
   {
     key: "react",
@@ -74,6 +78,8 @@ export const TECH_STACK: TechStack[] = [
     title: "Recoil",
     href: "https://recoiljs.org/",
     categories: ["State Management"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/recoil.svg",
   },
   {
     key: "git",
@@ -92,18 +98,16 @@ export const TECH_STACK: TechStack[] = [
     title: "AWS",
     href: "https://aws.amazon.com/",
     categories: ["Cloud"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/aws.svg",
   },
   {
     key: "prisma",
     title: "Prisma",
     href: "https://www.prisma.io/",
     categories: ["Database", "ORM"],
-  },
-  {
-    key: "drizzle",
-    title: "Drizzle",
-    href: "https://orm.drizzle.team/",
-    categories: ["Database", "ORM"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/prisma.svg",
   },
   {
     key: "mysql",
@@ -116,6 +120,8 @@ export const TECH_STACK: TechStack[] = [
     title: "PostgreSQL",
     href: "https://www.postgresql.org/",
     categories: ["Database"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/technology/postgresql.svg",
   },
   {
     key: "mongodb",
@@ -134,11 +140,15 @@ export const TECH_STACK: TechStack[] = [
     title: "Cursor",
     href: "https://cursor.com/",
     categories: ["Tools", "AI"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/tools/cursor.svg",
   },
   {
     key: "postman",
     title: "Postman",
     href: "https://www.postman.com/",
     categories: ["Tools", "API"],
+    image_path:
+      "https://raw.githubusercontent.com/Habeel-Shamsudeen/assets/main/tools/postman.svg",
   },
 ];

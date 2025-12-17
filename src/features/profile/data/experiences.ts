@@ -10,16 +10,22 @@ export const EXPERIENCES: Experience[] = [
         title: "Software Engineer",
         employmentPeriod: {
           start: "07.2025",
+          end: "12.2025",
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Developed Python-based web scrapers to collect and analyze real-time betting data.
-- Optimized infrastructure and deployment workflows using AWS CDK for scalable and maintainable environments.
-- Collaborated with backend and DevOps teams to ensure efficient and cost-effective cloud deployments.`,
+        description: `- Built a high-throughput async Python scraper with sub-2s latency, adding parallel fetching, lifecycle automation, and Prometheus metrics for real-time arbitrage detection.
+- Refactored AWS CDK from a monolithic stack into modular deployable units, reducing deployment time by 70%, improving infra maintainability, and enabling faster service-level iterations.
+- Replaced Kafka ingestion with gRPC streaming using Protocol Buffers, connection pooling, and intelligent batching, cutting ingestion latency by 60% and simplifying the distributed system architecture.
+- Developed a FastAPI Service aggregating livegames metadata with Redis-backed data storage, reducing EV/arbitrage compute cost by 80% via controlled 1/sec market scans and backend-side metadata consolidation.
+`,
         skills: [
           "Python",
           "TypeScript",
           "Web Scraping",
+          "gRPC",
+          "FastAPI",
+          "Docker",
           "AWS CDK",
           "AWS ECS",
           "AWS ECR",

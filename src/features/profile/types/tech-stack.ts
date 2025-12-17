@@ -4,6 +4,7 @@ export type TechStack = {
   href: string; // Official website URL of the technology
   categories: string[];
   theme?: boolean; // If `true`, the icon changes based on dark and light mode
+  image_path?: string; // Image path of the technology
   // Icon paths:
   // - Default: ./public/tech-stack-icons/[key].svg
   // - Dark mode (if `theme: true`): ./public/tech-stack-icons/[key]-dark.svg

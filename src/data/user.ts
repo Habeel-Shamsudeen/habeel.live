@@ -34,16 +34,22 @@ export const USER = {
     },
   ],
   about: `
-Hi, I’m Habeel — a Software Engineer passionate about building reliable, high-performance web applications with a focus on clean architecture and seamless user experiences.
-
-With over a year of experience, I’ve contributed to startups like Oddsview (YC W24), where I worked on building scalable Python-based web scrapers and optimized infrastructure using AWS CDK. I also interned as a full-stack developer at YouseAI, gaining hands-on experience in modern frontend and backend technologies.
-
-Currently, I’m building GradeIT, an online platform designed to simplify the evaluation of coding assignments through automated test case generation, constraint checking, and plagiarism detection — all powered by modern full-stack development practices.
-
-My tech stack includes Next.js, React, TypeScript, Node.js, and I’m actively exploring areas like DevOps and advanced backend communication. Outside of development, I enjoy learning new skills, exploring ideas through side projects, and collaborating with other developers to bring innovative solutions to life.
-
-Let's connect and collaborate!
-  `,
+  Hi, I'm Habeel — I build fast, reliable web applications that help businesses scale.
+  
+  I specialize in full-stack development with Next.js, React, TypeScript, Node.js, and Python. I've worked with startups like Oddsview (YC W24) to build high-performance systems that handle real-time data, optimize infrastructure, and reduce costs.
+  
+  What I can help you with:
+  - Building modern web apps from scratch — landing pages, dashboards, SaaS products
+  - Optimizing slow or unreliable systems for better performance
+  - Integrating APIs, authentication, payments, and third-party services
+  - Setting up cloud infrastructure with AWS, Docker, PostgreSQL, and Redis
+  
+  Whether you need a new product built or an existing one improved, I focus on clean code, fast delivery, and solutions that actually work.
+  
+  Currently building GradeIT — an automated code grading platform that reduces manual evaluation time by 70% through secure sandboxed execution and AI-powered test generation.
+  
+  Let's talk about your project.
+    `,
   avatar: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
   ogImage: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
   keywords:
