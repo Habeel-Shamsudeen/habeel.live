@@ -2,6 +2,28 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
+    id: "loopautomata",
+    title: "LoopAutomata",
+    period: {
+      start: "02.2026",
+    },
+    link: "https://habeel.live",
+    skills: [
+      "Next.js",
+      "Express",
+      "Python",
+      "PostgreSQL",
+      "Redis",
+      "Prisma",
+      "BullMQ",
+    ],
+    description: `AI explainer / whiteboard-style video platform — prompt to script, illustrated scenes, animated video, library, and multi-platform publish (YouTube, Meta, LinkedIn) with per-platform metadata and scheduling.
+- 🎬 Built a multi-stage BullMQ pipeline (script, assets, CPU render, stitch, thumbnails) with checkpointing and retries; LLM and vision for scripts, imagery, and component layout; deterministic rendering for timed scene video.
+- 📡 Shipped live job UX with Redis pub/sub and Express SSE (per-job and account-wide streams), DB catch-up, heartbeats, and a frontend EventSource layer for dashboards without polling every job.
+- 🧩 Contributed across the monorepo: Next.js app, Express APIs and workers, Prisma/Postgres, object storage, credits/concurrency, and orchestration around generation and publishing.`,
+    isExpanded: true,
+  },
+  {
     id: "gradeit",
     title: "GradeIT",
     period: {
@@ -31,7 +53,7 @@ export const PROJECTS: Project[] = [
       start: "10.2024",
       end: "11.2024",
     },
-    link: "https://vserv.habeel.live", 
+    link: "https://vserv.habeel.live",
     skills: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
     description: `A role-based vehicle service management system for workshops.
 - 🔐 Developed secure multi-role authentication using NextAuth across Admin, Customer, and Mechanic views.

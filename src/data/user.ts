@@ -8,7 +8,7 @@ export const USER = {
   bio: "Creating with code. Small details matter.",
   flipSentences: [
     "Creating with code. Small details matter.",
-    "Building GradeIt",
+    "Building LoopAutomata",
     "Software Developer",
   ],
   address: "Kerala, India",
@@ -27,11 +27,6 @@ export const USER = {
       company: "OddsView",
       website: "https://oddsview.com",
     },
-    {
-      title: "Founder",
-      company: "GradeIt",
-      website: "https://gradeit.habeel.live",
-    },
   ],
   about: `
   Hi, I'm Habeel — I build fast, reliable web applications that help businesses scale.
@@ -46,13 +41,15 @@ export const USER = {
   
   Whether you need a new product built or an existing one improved, I focus on clean code, fast delivery, and solutions that actually work.
   
-  Currently building GradeIT — an automated code grading platform that reduces manual evaluation time by 70% through secure sandboxed execution and AI-powered test generation.
+  Currently building LoopAutomata on habeel.live — an AI explainer video platform with a distributed BullMQ pipeline (Python workers for script, assets, render, stitch), Redis-backed progress, and SSE for realtime dashboards, plus Express/Next.js for orchestration, library, and multi-platform publish.
   
   Let's talk about your project.
     `,
-  avatar: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
-  ogImage: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
+  avatar:
+    "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
+  ogImage:
+    "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
   keywords:
-    "habeel, habeel shamsudeen, habeel shams, software developer, web developer, react developer, nextjs developer, typescript developer, frontend developer, fullstack developer, oddsview, gradeit, kerala developer, india developer, vserv, taskflow",
+    "habeel, habeel shamsudeen, habeel shams, software developer, web developer, react developer, nextjs developer, typescript developer, frontend developer, fullstack developer, oddsview, loopautomata, habeel.live, gradeit, kerala developer, india developer, vserv, taskflow",
   dateCreated: "2025-08-04", // YYYY-MM-DD
 };
