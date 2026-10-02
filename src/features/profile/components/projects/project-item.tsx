@@ -56,12 +56,18 @@ export function ProjectItem({
             </div>
           )}
 
-          <div className="flex-1 border-l border-dashed border-edge">
-            <CollapsibleTrigger className="group/project flex w-full items-center gap-4 p-4 pr-2 text-left select-none">
-              <div className="flex-1">
+          <div className="flex min-w-0 flex-1 items-center border-l border-dashed border-edge">
+            <CollapsibleTrigger className="group/project flex min-w-0 flex-1 items-center gap-4 p-4 text-left select-none">
+              <div className="min-w-0 flex-1">
                 <h3 className="mb-1 leading-snug font-medium text-balance">
                   {project.title}
                 </h3>
+
+                {project.summary && (
+                  <p className="mb-2 font-mono text-sm leading-relaxed text-pretty text-muted-foreground">
+                    {project.summary}
+                  </p>
+                )}
 
                 <dl className="text-sm text-muted-foreground">
                   <dt className="sr-only">Period</dt>
@@ -83,18 +89,6 @@ export function ProjectItem({
                 </dl>
               </div>
 
-              <SimpleTooltip content="Open Project Link">
-                <a
-                  className="flex size-6 shrink-0 items-center justify-center text-muted-foreground hover:text-foreground"
-                  href={addQueryParams(project.link, UTM_PARAMS)}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <LinkIcon className="pointer-events-none size-4" />
-                  <span className="sr-only">Open Project Link</span>
-                </a>
-              </SimpleTooltip>
-
               <div
                 className="shrink-0 text-muted-foreground [&_svg]:size-4"
                 aria-hidden
@@ -103,6 +97,23 @@ export function ProjectItem({
                 <ChevronsUpDownIcon className="hidden group-data-[state=closed]/project:block" />
               </div>
             </CollapsibleTrigger>
+
+            {project.link && (
+              <SimpleTooltip content={`View ${project.title}`}>
+                <a
+                  className="mr-2 flex size-10 shrink-0 items-center justify-center rounded-md text-muted-foreground outline-none hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                  href={addQueryParams(project.link, UTM_PARAMS)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon
+                    className="pointer-events-none size-4"
+                    aria-hidden
+                  />
+                  <span className="sr-only">View {project.title}</span>
+                </a>
+              </SimpleTooltip>
+            )}
           </div>
         </div>
 

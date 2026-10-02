@@ -1,8 +1,8 @@
-# [habeel.live](https://habeel.live)
+# [habeel.work](https://habeel.work)
 
-A minimal portfolio, component registry, and blog to showcase my work as a Design Engineer.
+A minimal portfolio, component registry, and blog to showcase my work as a Software Engineer.
 
-Check out the live site: [habeel.live](https://habeel.live)
+Check out the live site: [habeel.work](https://habeel.work)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png">
@@ -14,7 +14,7 @@ Check out the live site: [habeel.live](https://habeel.live)
 
 ### Tech Stack
 
-- Next.js 15
+- Next.js 16
 - Tailwind CSS v4
 - shadcn/ui
 
@@ -25,7 +25,7 @@ Check out the live site: [habeel.live](https://habeel.live)
 - vCard integration
 - SEO optimization: [JSON-LD schema](https://json-ld.org), sitemap, robots
 - AI-friendly [/llms.txt](https://llmstxt.org)
-- Spam-protected email
+- Resume download and contact links
 
 ## Acknowledgments
 

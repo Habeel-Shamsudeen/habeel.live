@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://habeel.live",
+  url: process.env.APP_URL || USER.website,
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -31,7 +31,7 @@ export const SOURCE_CODE_GITHUB_URL =
   "https://github.com/habeel-shamsudeen/habeel.live";
 
 export const UTM_PARAMS = {
-  utm_source: "habeel.live",
+  utm_source: "habeel.work",
   utm_medium: "portfolio_website",
   utm_campaign: "referral",
 };

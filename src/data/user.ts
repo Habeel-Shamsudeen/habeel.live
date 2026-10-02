@@ -1,55 +1,53 @@
 export const USER = {
   firstName: "Habeel",
   lastName: "Shamsudeen",
-  displayName: "Habeel",
+  displayName: "Habeel Shamsudeen",
   username: "habeel",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
+  bio: "Full-stack software engineer building web applications, data pipelines, and AI workflows. Experience at Harmony AI and OddsView (YC W24).",
+  resumeUrl: "/habeel-shamsudeen-resume.pdf",
   flipSentences: [
-    "Creating with code. Small details matter.",
-    "Building LoopAutomata",
-    "Software Developer",
+    "Full-stack software engineer",
+    "React, TypeScript & Python",
+    "Web apps & backend systems",
   ],
   address: "Kerala, India",
   phoneNumber: "KzkxODA3NTgxNDc0Ng", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "aGFiZWVsODA3NUBnbWFpbC5jb20=", // base64 encoded
-  website: "https://habeel.live",
+  email: "aGFiZWVsLmNvbnRhY3RAZ21haWwuY29t", // base64 encoded
+  website: "https://habeel.work",
   otherWebsites: [
-    "https://gradeit.habeel.live",
+    "https://grade-it-ten.vercel.app/",
     "https://vserv.habeel.live",
-    "https://taskflow.habeel.live",
+    "https://habeelstodoapp.vercel.app/",
   ],
-  jobTitle: "Software Developer",
-  jobs: [
-    {
-      title: "Software Developer",
-      company: "OddsView",
-      website: "https://oddsview.com",
-    },
-  ],
+  jobTitle: "Full-stack Software Engineer",
+  jobs: [] as { title: string; company: string; website: string }[],
+  education: {
+    degree: "Bachelor of Technology in Computer Science",
+    institution: "Muthoot Institute of Technology and Science",
+    location: "Ernakulam, Kerala",
+  },
   about: `
-  Hi, I'm Habeel — I build fast, reliable web applications that help businesses scale.
-  
-  I specialize in full-stack development with Next.js, React, TypeScript, Node.js, and Python. I've worked with startups like Oddsview (YC W24) to build high-performance systems that handle real-time data, optimize infrastructure, and reduce costs.
-  
-  What I can help you with:
-  - Building modern web apps from scratch — landing pages, dashboards, SaaS products
-  - Optimizing slow or unreliable systems for better performance
-  - Integrating APIs, authentication, payments, and third-party services
-  - Setting up cloud infrastructure with AWS, Docker, PostgreSQL, and Redis
-  
-  Whether you need a new product built or an existing one improved, I focus on clean code, fast delivery, and solutions that actually work.
-  
-  Currently building LoopAutomata on habeel.live — an AI explainer video platform with a distributed BullMQ pipeline (Python workers for script, assets, render, stitch), Redis-backed progress, and SSE for realtime dashboards, plus Express/Next.js for orchestration, library, and multi-platform publish.
-  
-  Let's talk about your project.
-    `,
+I'm Habeel, a software engineer based in Kerala, India. I work across the frontend, backend, and infrastructure with TypeScript, Python, React, and Next.js.
+
+At Harmony AI, I built inventory forecasting tools for manufacturing clients and a SQL Server-to-PostgreSQL replication service. At OddsView (YC W24), I worked on live sports data, streaming APIs, and AWS infrastructure, reducing ingestion latency and compute costs.
+
+My own projects include LoopAutomata, an AI video production workflow, and GradeIT, a code grading platform for faculty and students.
+
+I can help your team:
+- Build web products, dashboards, and internal tools with authentication and role-based access.
+- Connect APIs and business data, including database replication and live data pipelines.
+- Develop AI workflows with background jobs, progress tracking, and failure recovery.
+- Improve backend performance and cloud infrastructure costs.
+
+For an engineering role or a client project, email me with the team, the problem, and what you want to build.
+`,
   avatar:
     "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/avatar.jpg",
   ogImage:
     "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
   keywords:
-    "habeel, habeel shamsudeen, habeel shams, software developer, web developer, react developer, nextjs developer, typescript developer, frontend developer, fullstack developer, oddsview, loopautomata, habeel.live, gradeit, kerala developer, india developer, vserv, taskflow",
+    "habeel, habeel shamsudeen, software engineer, full-stack engineer, backend engineer, web developer, react, nextjs, typescript, python, harmony ai, oddsview, loopautomata, gradeit, postgresql, redis, aws, kerala, india",
   dateCreated: "2025-08-04", // YYYY-MM-DD
 };

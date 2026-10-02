@@ -9,59 +9,21 @@ export default function manifest(): MetadataRoute.Manifest {
     description: SITE_INFO.description,
     icons: [
       {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.svg",
+        src: "/logo/logo-vector.svg",
         type: "image/svg+xml",
         sizes: "any",
         purpose: "any",
       },
       {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.png",
+        src: "/logo/logo.png",
         type: "image/png",
-        sizes: "192x192",
+        sizes: "179x180",
         purpose: "any",
-      },
-      {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.png",
-        type: "image/png",
-        sizes: "512x512",
-        purpose: "any",
-      },
-      {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.png",
-        type: "image/png",
-        sizes: "512x512",
-        purpose: "maskable",
       },
     ],
     id: "/?utm_source=pwa",
     start_url: "/?utm_source=pwa",
     display: "standalone",
     scope: "/",
-    screenshots: [
-      {
-        src: "https://assets.chanhdai.com/images/screenshot-mobile-dark.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "https://assets.chanhdai.com/images/screenshot-mobile-light.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-dark-theme.png",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-      {
-        src: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/desktop-light-theme.png",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-    ],
   };
 }

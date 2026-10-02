@@ -47,11 +47,11 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "habeel",
+      name: `${USER.firstName} ${USER.lastName}`,
       url: SITE_INFO.url,
     },
   ],
-  creator: "habeel",
+  creator: `${USER.firstName} ${USER.lastName}`,
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -77,18 +77,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/favicon/favicon.ico",
+        url: "/favicon/favicon.ico",
         sizes: "any",
       },
       {
-        url: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/favicon/favicon.svg",
+        url: "/favicon/favicon.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "https://raw.githubusercontent.com/Habeel-Shamsudeen/habeel.live/main/public/icons/logo.png",
+      url: "/logo/logo.png",
       type: "image/png",
-      sizes: "180x180",
     },
   },
 };
