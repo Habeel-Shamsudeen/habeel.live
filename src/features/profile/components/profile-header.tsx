@@ -1,16 +1,12 @@
 import { FlipSentences } from "@/components/flip-sentences";
-import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
 import { cn } from "@/lib/utils";
-
-import { VerifiedIcon } from "./verified-icon";
 
 export function ProfileHeader() {
   return (
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
         <div className="mx-[2px] my-[3px]">
-          {}
           <img
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
             alt={`${USER.displayName}'s avatar`}
@@ -20,7 +16,7 @@ export function ProfileHeader() {
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col">
+      <div className="flex min-w-0 flex-1 flex-col">
         <div
           className={cn(
             "flex grow items-end pb-1 pl-4",
@@ -36,15 +32,11 @@ export function ProfileHeader() {
         </div>
 
         <div className="border-t border-edge">
-          <h1 className="flex items-center pl-4 text-3xl font-semibold">
+          <h1 className="px-4 py-1 text-2xl font-semibold text-balance sm:text-3xl">
             {USER.displayName}
-            &nbsp;
-            <SimpleTooltip content="Verified">
-              <VerifiedIcon className="size-[0.6em] translate-y-px text-info" />
-            </SimpleTooltip>
           </h1>
 
-          <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">
+          <div className="min-h-16 border-t border-edge px-4 py-1 sm:min-h-12">
             <FlipSentences sentences={USER.flipSentences} />
           </div>
         </div>

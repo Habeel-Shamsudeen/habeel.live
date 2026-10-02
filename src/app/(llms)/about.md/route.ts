@@ -1,3 +1,4 @@
+import { SITE_INFO } from "@/config/site";
 import { USER } from "@/data/user";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { TECH_STACK } from "@/features/profile/data/tech-stack";
@@ -12,6 +13,12 @@ ${USER.about.trim()}
 - Last Name: ${USER.lastName}
 - Location: ${USER.address}
 - Website: ${USER.website}
+- Resume: [Download PDF](${SITE_INFO.url}${USER.resumeUrl})
+
+## Education
+
+${USER.education.degree}
+${USER.education.institution}, ${USER.education.location}
 
 ## Social Links
 

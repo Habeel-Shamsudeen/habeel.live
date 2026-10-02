@@ -4,11 +4,14 @@ import path from "path";
 
 import type { Post, PostMetadata } from "@/types/blog";
 
+// Keep the borrowed starter content in the repository without publishing it.
+const STARTER_POST_SLUGS = new Set(["welcome", "chanhdai-brand"]);
+
 function parseFrontmatter(fileContent: string) {
   const file = matter(fileContent);
 
   return {
-    metadata: file.data as PostMetadata,
+    metadata: file.data as PostMetadata & { draft?: boolean },
     content: file.content,
   };
 }
@@ -25,16 +28,16 @@ function readMDXFile(filePath: string) {
 function getMDXData(dir: string) {
   const mdxFiles = getMDXFiles(dir);
 
-  return mdxFiles.map<Post>((file) => {
+  return mdxFiles.flatMap<Post>((file) => {
     const { metadata, content } = readMDXFile(path.join(dir, file));
 
     const slug = path.basename(file, path.extname(file));
 
-    return {
-      metadata,
-      slug,
-      content,
-    };
+    if (STARTER_POST_SLUGS.has(slug) || metadata.draft === true) {
+      return [];
+    }
+
+    return [{ metadata, slug, content }];
   });
 }
 

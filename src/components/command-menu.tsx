@@ -6,7 +6,10 @@ import {
   BriefcaseBusinessIcon,
   CircleUserIcon,
   CornerDownLeftIcon,
+  FileTextIcon,
+  GraduationCapIcon,
   LetterTextIcon,
+  MailIcon,
   MoonStarIcon,
   SunIcon,
 } from "lucide-react";
@@ -24,6 +27,7 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
+import { USER } from "@/data/user";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { cn } from "@/lib/utils";
 
@@ -77,6 +81,23 @@ const DAIFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#projects",
     icon: Icons.project,
   },
+  {
+    title: "Education",
+    href: "/#education",
+    icon: GraduationCapIcon,
+  },
+  {
+    title: "Contact",
+    href: "/#contact",
+    icon: MailIcon,
+  },
+  {
+    title: "View Resume",
+    href: USER.resumeUrl,
+    icon: FileTextIcon,
+    openInNewTab: true,
+    keywords: ["resume", "cv", "recruiter", "hiring"],
+  },
   // {
   //   title: "Honors & Awards",
   //   href: "/#awards",
@@ -102,7 +123,7 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
 }));
 
 export function CommandMenu() {
-// { posts }: { posts: Post[] }
+  // { posts }: { posts: Post[] }
   const router = useRouter();
 
   const { setTheme } = useTheme();
@@ -327,6 +348,7 @@ function buildCommandMetaMap() {
   const commandMetaMap: CommandMetaMap = new Map();
 
   commandMetaMap.set("Download vCard", { commandKind: "command" });
+  commandMetaMap.set("View Resume", { commandKind: "link" });
 
   commandMetaMap.set("Light", { commandKind: "command" });
   commandMetaMap.set("Dark", { commandKind: "command" });

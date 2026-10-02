@@ -2,6 +2,8 @@ import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
+import { Contact } from "@/features/profile/components/contact";
+import { Education } from "@/features/profile/components/education";
 // import { Awards } from "@/features/profile/components/awards";
 // import { Blog } from "@/features/profile/components/blog";
 // import { Certifications } from "@/features/profile/components/certifications";
@@ -9,6 +11,7 @@ import { Experiences } from "@/features/profile/components/experiences";
 import { Overview } from "@/features/profile/components/overview";
 import { ProfileCover } from "@/features/profile/components/profile-cover";
 import { ProfileHeader } from "@/features/profile/components/profile-header";
+import { ProfileIntro } from "@/features/profile/components/profile-intro";
 import { Projects } from "@/features/profile/components/projects";
 import { SocialLinks } from "@/features/profile/components/social-links";
 import { TeckStack } from "@/features/profile/components/teck-stack";
@@ -28,6 +31,7 @@ export default function Page() {
       <div className="mx-auto md:max-w-3xl">
         <ProfileCover />
         <ProfileHeader />
+        <ProfileIntro />
         <Separator />
 
         <Overview />
@@ -42,14 +46,19 @@ export default function Page() {
         {/* <GitHubContributions />
         <Separator /> */}
 
-        <TeckStack />
-        <Separator />
-
         <Experiences />
         <Separator />
 
         <Projects />
         <Separator />
+
+        <TeckStack />
+        <Separator />
+
+        <Education />
+        <Separator />
+
+        <Contact />
 
         {/* <Blog />
         <Separator /> */}
@@ -74,9 +83,12 @@ function getPageJsonLd(): WithContext<PageSchema> {
     dateModified: new Date().toISOString(),
     mainEntity: {
       "@type": "Person",
-      name: USER.displayName,
+      name: `${USER.firstName} ${USER.lastName}`,
       identifier: USER.username,
       image: USER.avatar,
+      jobTitle: USER.jobTitle,
+      description: USER.bio,
+      url: USER.website,
     },
   };
 }

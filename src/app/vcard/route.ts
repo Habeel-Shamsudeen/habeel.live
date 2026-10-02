@@ -12,6 +12,7 @@ export async function GET() {
 
   card
     .addName(USER.lastName, USER.firstName)
+    .addJobtitle(USER.jobTitle)
     .addPhoneNumber(decodePhoneNumber(USER.phoneNumber))
     .addAddress(USER.address)
     .addEmail(decodeEmail(USER.email))
@@ -24,7 +25,7 @@ export async function GET() {
 
   if (USER.jobs.length > 0) {
     const company = USER.jobs[0];
-    card.addCompany(company.company).addJobtitle(company.title);
+    card.addCompany(company.company);
   }
 
   return new NextResponse(card.toString(), {
